@@ -1,0 +1,67 @@
+{
+    "namespace": "com.hopped.runner.avro",
+    "name": "RunList",
+    "type": "record",
+    "fields": [
+        {
+            "name": "runs",
+            "type": {
+                "type": "array",
+                "items": {
+                    "name": "Run",
+                    "type": "record",
+                    "fields": [
+                        {
+                            "name": "nameOrAlias",
+                            "type": "string"
+                        },
+                        {
+                            "name": "id",
+                            "type": "int"
+                        },
+                        {
+                            "name": "averageHeartRateBpm",
+                            "type": "int"
+                        },
+                        {
+                            "name": "averagePace",
+                            "type": "double"
+                        },
+                        {
+                            "name": "averageSpeed",
+                            "type": "string"
+                        },
+                        {
+                            "name": "calories",
+                            "type": "int"
+                        },
+                        {
+                            "name": "date",
+                            "type": "int"
+                        },
+                        {
+                            "name": "description",
+                            "type": "string"
+                        },
+                        {
+                            "name": "distanceMeters",
+                            "type": "double"
+                        },
+                        {
+                            "name": "maximumSpeed",
+                            "type": "double"
+                        },
+                        {
+                            "name": "maximumHeartRateBpm",
+                            "type": "int"
+                        },
+                        {
+                            "name": "totalTimeSeconds",
+                            "type": "int"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

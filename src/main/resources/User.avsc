@@ -1,0 +1,47 @@
+{
+    "namespace": "com.hopped.runner.avro",
+    "name": "User",
+    "type": "record",
+    "fields": [
+        {
+            "name": "nameOrAlias",
+            "type": "string"
+        },
+        {
+            "name": "id",
+            "type": "int"
+        },
+        {
+            "name": "birthdate",
+            "type": "int"
+        },
+        {
+            "name": "totalDistanceMeters",
+            "type": "double"
+        },
+        {
+            "name": "eMail",
+            "type": "string"
+        },
+        {
+            "name": "firstName",
+            "type": "string"
+        },
+        {
+            "name": "gender",
+            "type": "string"
+        },
+        {
+            "name": "height",
+            "type": "int"
+        },
+        {
+            "name": "lastName",
+            "type": "string"
+        },
+        {
+            "name": "weight",
+            "type": "int"
+        }
+    ]
+}

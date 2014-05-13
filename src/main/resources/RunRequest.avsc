@@ -1,0 +1,24 @@
+{
+    "namespace": "com.hopped.runner.avro",
+    "name": "RunRequest",
+    "type": "record",
+    "fields": [
+        {
+            "name": "user",
+            "type": {
+                "name": "UserRef",
+                "type": "record",
+                "fields" : [
+                    {
+                        "name": "id",
+                        "type": "long"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "distance",
+            "type": "string"
+        }
+    ]
+}

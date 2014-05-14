@@ -1,0 +1,80 @@
+{
+    "namespace": "com.hopped.runner.avro",
+    "name": "RunList",
+    "type": "record",
+    "fields": [
+        {
+            "name": "runs",
+            "type": [ "null", {
+                "type": "array",
+                "items": {
+                    "name": "Run",
+                    "type": "record",
+                    "fields": [
+                        {
+                            "name": "nameOrAlias",
+                            "type": [ "null", "string" ],
+                            "default": null
+                        },
+                        {
+                            "name": "id",
+                            "type": [ "null", "int" ],
+                            "default": null
+                        },
+                        {
+                            "name": "averageHeartRateBpm",
+                            "type": [ "null", "int" ],
+                            "default": null
+                        },
+                        {
+                            "name": "averagePace",
+                            "type": [ "null", "double" ],
+                            "default": null
+                        },
+                        {
+                            "name": "averageSpeed",
+                            "type": [ "null", "string" ],
+                            "default": null
+                        },
+                        {
+                            "name": "calories",
+                            "type": [ "null", "int" ],
+                            "default": null
+                        },
+                        {
+                            "name": "date",
+                            "type": [ "null", "int" ],
+                            "default": null
+                        },
+                        {
+                            "name": "description",
+                            "type": [ "null", "string" ],
+                            "default": null
+                        },
+                        {
+                            "name": "distanceMeters",
+                            "type": [ "null", "double" ],
+                            "default": null
+                        },
+                        {
+                            "name": "maximumSpeed",
+                            "type": [ "null", "double" ],
+                            "default": null
+                        },
+                        {
+                            "name": "maximumHeartRateBpm",
+                            "type": [ "null", "int" ],
+                            "default": null
+                        },
+                        {
+                            "name": "totalTimeSeconds",
+                            "type": [ "null", "int" ],
+                            "default": null
+                        }
+                    ]
+                }
+            }],
+            "default": null
+        }
+    ]
+}

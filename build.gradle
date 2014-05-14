@@ -1,0 +1,53 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url 'http://clojars.org/repo'
+        }
+    }
+    dependencies {
+        classpath 'org.apache.maven:maven-artifact:2.2.1'
+        classpath 'org.apache.avro:avro-compiler:1.7.4'
+        classpath 'org.clojars.miguno:avro-gradle-plugin:1.7.2'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'eclipse'
+apply plugin: 'avro-gradle-plugin'
+
+mainClassName = "com.hopped.runner.rabbitmq.Main"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // runtime
+    compile 'org.slf4j:slf4j-api:1.7.6'
+    compile 'org.slf4j:slf4j-jdk14:1.7.6'
+    compile 'org.apache.avro:avro:1.7.4'
+    compile 'com.rabbitmq:amqp-client:3.2.4'
+
+    compileAvro
+}
+
+compileAvro {
+    source = 'src/main/resources'
+    destinationDir = file("$buildDir/generated-src/avro")
+    description = 'Assembles Java classes based on given Apache Avro definitions'
+}
+
+compileAvro.onlyIf { !project.hasProperty('skipAvro') }
+
+sourceSets {
+    main {
+        java {
+            srcDir compileAvro.destinationDir
+        }
+        runtimeClasspath = files(output.resourcesDir) +
+            files(compileAvro.source) +
+            runtimeClasspath
+    }
+}

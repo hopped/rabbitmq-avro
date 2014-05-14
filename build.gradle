@@ -25,7 +25,10 @@ repositories {
 
 dependencies {
     // runtime
+    compile 'org.slf4j:slf4j-api:1.7.6'
+    compile 'org.slf4j:slf4j-jdk14:1.7.6'
     compile 'org.apache.avro:avro:1.7.4'
+    compile 'com.rabbitmq:amqp-client:3.2.4'
 
     compileAvro
 }

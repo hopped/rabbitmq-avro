@@ -5,20 +5,23 @@
     "fields": [
         {
             "name": "user",
-            "type": {
+            "type": [ "null", {
                 "name": "UserRef",
                 "type": "record",
-                "fields" : [
+                "fields": [
                     {
                         "name": "id",
-                        "type": "long"
+                        "type": [ "null", "int" ],
+                        "default": null
                     }
                 ]
-            }
+            }],
+            "default": null
         },
         {
             "name": "distance",
-            "type": "string"
+            "type": [ "null", "string" ],
+            "default": null
         }
     ]
 }

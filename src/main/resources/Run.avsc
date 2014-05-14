@@ -5,7 +5,7 @@
     "fields": [
         {
             "name": "runs",
-            "type": {
+            "type": [ "null", {
                 "type": "array",
                 "items": {
                     "name": "Run",
@@ -13,55 +13,68 @@
                     "fields": [
                         {
                             "name": "nameOrAlias",
-                            "type": "string"
+                            "type": [ "null", "string" ],
+                            "default": null
                         },
                         {
                             "name": "id",
-                            "type": "int"
+                            "type": [ "null", "int" ],
+                            "default": null
                         },
                         {
                             "name": "averageHeartRateBpm",
-                            "type": "int"
+                            "type": [ "null", "int" ],
+                            "default": null
                         },
                         {
                             "name": "averagePace",
-                            "type": "double"
+                            "type": [ "null", "double" ],
+                            "default": null
                         },
                         {
                             "name": "averageSpeed",
-                            "type": "string"
+                            "type": [ "null", "string" ],
+                            "default": null
                         },
                         {
                             "name": "calories",
-                            "type": "int"
+                            "type": [ "null", "int" ],
+                            "default": null
                         },
                         {
                             "name": "date",
-                            "type": "int"
+                            "type": [ "null", "int" ],
+                            "default": null
                         },
                         {
                             "name": "description",
-                            "type": "string"
+                            "type": [ "null", "string" ],
+                            "default": null
                         },
                         {
                             "name": "distanceMeters",
-                            "type": "double"
+                            "type": [ "null", "double" ],
+                            "default": null
                         },
                         {
                             "name": "maximumSpeed",
-                            "type": "double"
+                            "type": [ "null", "double" ],
+                            "default": null
                         },
                         {
                             "name": "maximumHeartRateBpm",
-                            "type": "int"
+                            "type": [ "null", "int" ],
+                            "default": null
                         },
                         {
                             "name": "totalTimeSeconds",
-                            "type": "int"
+                            "type": [ "null", "int" ],
+                            "default": null
                         }
                     ]
                 }
-            }
+            }],
+            "default": null
         }
     ]
 }

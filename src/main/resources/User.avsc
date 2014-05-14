@@ -5,43 +5,53 @@
     "fields": [
         {
             "name": "nameOrAlias",
-            "type": "string"
+            "type": [ "null", "string" ],
+            "default": null
         },
         {
             "name": "id",
-            "type": "int"
+            "type": [ "null", "int" ],
+            "default": null
         },
         {
             "name": "birthdate",
-            "type": "int"
+            "type": [ "null", "int" ],
+            "default": null
         },
         {
             "name": "totalDistanceMeters",
-            "type": "double"
+            "type": [ "null", "double" ],
+            "default": null
         },
         {
             "name": "eMail",
-            "type": "string"
+            "type": [ "null", "string" ],
+            "default": null
         },
         {
             "name": "firstName",
-            "type": "string"
+            "type": [ "null", "string" ],
+            "default": null
         },
         {
             "name": "gender",
-            "type": "string"
+            "type": [ "null", "string" ],
+            "default": null
         },
         {
             "name": "height",
-            "type": "int"
+            "type": [ "null", "int" ],
+            "default": null
         },
         {
             "name": "lastName",
-            "type": "string"
+            "type": [ "null", "string" ],
+            "default": null
         },
         {
             "name": "weight",
-            "type": "int"
+            "type": [ "null", "int" ],
+            "default": null
         }
     ]
 }
